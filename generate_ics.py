@@ -24,17 +24,6 @@ CALENDAR_EVENTS_RE = re.compile(r'"events"\s*:\s*(\[[\s\S]*?\])\s*[,}]', re.S)
 URL_KIND_RE = re.compile(r"/(event|game|training|tournament)/view", re.I)
 TITLE_DATE_RE = re.compile(r"(\d{1,2})\.(\d{1,2})\.(\d{4})")
 
-STATUS_PHRASES = [
-    "Zeit zum Zu-/Absagen abgelaufen",
-    "Zeit zum Zu- oder Absagen abgelaufen",
-    "Zu-/Absagen abgelaufen",
-    "Zu- / Absagen abgelaufen",
-    "An-/Abmeldefrist abgelaufen",
-    "Anmeldefrist abgelaufen",
-    "Abmeldefrist abgelaufen",
-    "An- und Abmeldefrist abgelaufen",
-]
-
 
 @dataclass
 class Membership:
@@ -66,26 +55,8 @@ def optional_env(name: str) -> str | None:
     return value or None
 
 
-def parse_team_ids(raw: str | None) -> list[str]:
-    if not raw:
-        return []
-    return [part.strip() for part in raw.split(",") if part.strip()]
-
-
-def get_selected_team_ids() -> list[str]:
-    """
-    Prefer a single-team secret, but keep the legacy comma-separated fallback.
-    """
-    team_id = optional_env("SPIELERPLUS_TEAM_ID")
-    if team_id:
-        return [team_id]
-    return parse_team_ids(optional_env("SPIELERPLUS_MEMBER_IDS"))
-
-
-def parse_date(value: str | None) -> date | None:
-    if not value:
-        return None
-    return date.fromisoformat(value)
+def get_selected_team_name() -> str | None:
+    return optional_env("SPIELERPLUS_TEAM_NAME")
 
 
 def local_tz() -> ZoneInfo:
@@ -178,7 +149,6 @@ def login(session: requests.Session, email: str, password: str) -> None:
             data["_csrf"] = meta["content"]
 
     if not data.get("_csrf"):
-        # Fallback: leave it out if the page does not expose it as expected.
         data.pop("_csrf", None)
 
     post = session.post(
@@ -260,7 +230,6 @@ def parse_calendar_events(html_text: str) -> list[dict[str, Any]]:
         start = parse_iso_local(item.get("start"))
         end = parse_iso_local(item.get("end"))
         if start and end:
-            # SpielerPlus can encode a calendar-end that needs to be aligned back to the same date.
             end = normalize_end(start, end)
 
         items.append(
@@ -285,18 +254,10 @@ def normalize_end(start: datetime, end: datetime) -> datetime:
 
 def parse_detail_page(
     html_text: str,
-    fallback_title: str,
     fallback_start: datetime | None,
     fallback_end: datetime | None,
-) -> tuple[str, datetime | None, datetime | None, str]:
+) -> tuple[datetime | None, datetime | None, str, bool, bool]:
     soup = BeautifulSoup(html_text, "html.parser")
-    title = fallback_title.strip()
-
-    header = soup.select_one(".main-header .panel-title") or soup.select_one(".main-header")
-    if header:
-        header_text = header.get_text(" ", strip=True)
-        if header_text:
-            title = header_text
 
     title_tag = soup.find("title")
     event_date: date | None = None
@@ -335,74 +296,37 @@ def parse_detail_page(
     if location_el:
         location = clean_location(location_el.get_text(" ", strip=True))
 
-    return title, start, end, location
+    page_text = soup.get_text(" ", strip=True).lower()
+    is_home = "heimspiel" in page_text
+    is_away = "auswärtsspiel" in page_text or "auswaertsspiel" in page_text
+
+    return start, end, location, is_home, is_away
 
 
-def _normalize_summary_text(text: str) -> str:
+def clean_title(text: str) -> str:
     cleaned = html.unescape(text or "")
     cleaned = cleaned.replace("\xa0", " ")
-    for phrase in STATUS_PHRASES:
-        cleaned = re.sub(re.escape(phrase), " ", cleaned, flags=re.I)
-    cleaned = re.sub(r"\b(?:abgelaufen|abgemeldet|angemeldet)\b", " ", cleaned, flags=re.I)
-    cleaned = re.sub(r"\s*\|\s*", " ", cleaned)
-    cleaned = re.sub(r"\s*[–—:-]+\s*", " ", cleaned)
+    cleaned = re.sub(r"\s*\|\s*.*$", "", cleaned)
+    cleaned = re.sub(r"\s*[–—:-]+\s*.*$", "", cleaned)
     cleaned = re.sub(r"\s+", " ", cleaned)
     return cleaned.strip(" -–—:|")
 
 
-def _strip_team_name(text: str, team_name: str) -> str:
-    if not team_name:
-        return text
-    escaped = re.escape(team_name)
-    stripped = re.sub(escaped, " ", text, flags=re.I)
-    stripped = re.sub(r"\s+", " ", stripped)
-    return stripped.strip(" -–—:|")
-
-
-def _build_game_summary(title: str, team_name: str) -> str:
-    normalized = _normalize_summary_text(title)
-
-    match_type = ""
-    if re.search(r"\bausw(?:ä|ae)rtssp?iel\b", normalized, flags=re.I) or re.search(
-        r"\bausw(?:ä|ae)rt\b", normalized, flags=re.I
-    ):
-        match_type = "Auswärtsspiel"
-    elif re.search(r"\bheimspiel\b", normalized, flags=re.I):
-        match_type = "Heimspiel"
-
-    opponent = normalized
-    opponent = re.sub(r"(?i)\bheimspiel\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bausw(?:ä|ae)rtssp?iel\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bausw(?:ä|ae)rt\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bgegen\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bvs\.?\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bv\.\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bbei\b", " ", opponent)
-    opponent = re.sub(r"(?i)\bheim\b", " ", opponent)
-    opponent = _strip_team_name(opponent, team_name)
-    opponent = _normalize_summary_text(opponent)
-
-    if not opponent:
-        opponent = "Spiel"
-
-    if match_type:
-        return f"{match_type} {opponent}".strip()
-    return opponent
-
-
-def build_summary(kind: str, title: str, team_name: str) -> str:
+def build_summary(kind: str, title: str, is_home: bool, is_away: bool) -> str:
     kind = (kind or "").lower().strip()
-    cleaned_title = _normalize_summary_text(title)
-    cleaned_title = _strip_team_name(cleaned_title, team_name)
-    cleaned_title = _normalize_summary_text(cleaned_title)
+    base_title = clean_title(title)
 
     if kind == "game":
-        return _build_game_summary(cleaned_title, team_name)
+        base_title = re.sub(r"(?i)^\s*heimspiel\s+", "", base_title).strip(" -–—:|")
+        base_title = re.sub(r"(?i)^\s*ausw(?:ä|ae)rtsspiel\s+", "", base_title).strip(" -–—:|")
+        base_title = re.sub(r"(?i)^\s*ausw(?:ä|ae)rt\s+", "", base_title).strip(" -–—:|")
 
-    if not cleaned_title:
-        cleaned_title = kind.capitalize() or "Termin"
+        if is_home:
+            return f"Heimspiel {base_title}".strip()
+        if is_away:
+            return f"Auswärtsspiel {base_title}".strip()
 
-    return cleaned_title
+    return base_title
 
 
 def build_ics(items: list[FeedItem], calendar_name: str) -> bytes:
@@ -411,7 +335,10 @@ def build_ics(items: list[FeedItem], calendar_name: str) -> bytes:
     cal.add("version", "2.0")
     cal.add("x-wr-calname", calendar_name)
 
-    for item in sorted(items, key=lambda x: (x.start or datetime.max.replace(tzinfo=local_tz()), x.team_name, x.title)):
+    for item in sorted(
+        items,
+        key=lambda x: (x.start or datetime.max.replace(tzinfo=local_tz()), x.team_name, x.title),
+    ):
         evt = Event()
         evt.add("uid", f"spielerplus-{item.team_name}-{item.event_id}@local")
         evt.add("summary", f"{item.title} | {item.team_name}".strip())
@@ -446,8 +373,7 @@ def main() -> None:
     output_filename = env("CALENDAR_FILENAME")
     calendar_name = os.environ.get("CALENDAR_NAME", "SpielerPlus Calendar").strip() or "SpielerPlus Calendar"
 
-    selected_ids = get_selected_team_ids()
-    allowed_team_ids = set(selected_ids) if selected_ids else None
+    selected_team_name = get_selected_team_name()
 
     session = make_session()
     login(session, username, password)
@@ -456,33 +382,40 @@ def main() -> None:
     if not memberships:
         memberships = [Membership(team_id="", team_name="SpielerPlus")]
 
-    if allowed_team_ids is not None:
-        memberships = [m for m in memberships if m.team_id in allowed_team_ids]
+    if selected_team_name:
+        needle = selected_team_name.strip().lower()
+        memberships = [
+            m for m in memberships
+            if needle in m.team_name.strip().lower()
+        ]
 
     if not memberships:
-        if optional_env("SPIELERPLUS_TEAM_ID"):
-            raise RuntimeError("No SpielerPlus membership matched SPIELERPLUS_TEAM_ID.")
-        raise RuntimeError("No SpielerPlus memberships found after login.")
+        if selected_team_name:
+            raise RuntimeError(
+                f'Kein Team gefunden, das "{selected_team_name}" enthält.'
+            )
+        raise RuntimeError("Keine Teams gefunden.")
 
     feed_items: list[FeedItem] = []
     for membership in memberships:
         if membership.team_id:
             switch_user(session, membership.team_id)
+
         page = calendar_page_html(session)
         events = parse_calendar_events(page)
 
         for ev in events:
             if not ev["id"]:
                 continue
+
             detail_html = detail_page_html(session, ev["kind"], ev["id"])
-            title, start, end, location = parse_detail_page(
+            start, end, location, is_home, is_away = parse_detail_page(
                 detail_html,
-                fallback_title=ev["title"],
                 fallback_start=ev["start"],
                 fallback_end=ev["end"],
             )
 
-            summary = build_summary(ev["kind"], title, membership.team_name)
+            summary = build_summary(ev["kind"], ev["title"], is_home, is_away)
 
             feed_items.append(
                 FeedItem(
