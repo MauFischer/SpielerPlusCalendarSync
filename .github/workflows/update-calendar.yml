@@ -27,14 +27,20 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate ICS file
+        env:
+          SPIELERPLUS_USERNAME: ${{ secrets.SPIELERPLUS_USERNAME }}
+          SPIELERPLUS_PASSWORD: ${{ secrets.SPIELERPLUS_PASSWORD }}
+          CALENDAR_FILENAME: ${{ secrets.CALENDAR_FILENAME }}
+          SPIELERPLUS_MEMBER_IDS: ${{ secrets.SPIELERPLUS_MEMBER_IDS }}
+          CALENDAR_NAME: ${{ vars.CALENDAR_NAME }}
+          TIMEZONE: ${{ vars.TIMEZONE }}
         run: |
-          mkdir -p public
-          python generate_ics.py --output public/spielerplus.ics
+          python generate_ics.py
 
       - name: Commit updated calendar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/spielerplus.ics
+          git add public/
           git commit -m "Update calendar" || echo "No changes to commit"
           git push
