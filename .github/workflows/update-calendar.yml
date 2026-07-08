@@ -32,7 +32,7 @@ jobs:
           SPIELERPLUS_PASSWORD: ${{ secrets.SPIELERPLUS_PASSWORD }}
           SPIELERPLUS_TEAM_NAME: ${{ secrets.SPIELERPLUS_TEAM_NAME }}
           CALENDAR_FILENAME: ${{ secrets.CALENDAR_FILENAME }}
-          CALENDAR_NAME: ${{ vars.CALENDAR_NAME }}
+          CALENDAR_NAME: ${{ secrets.CALENDAR_NAME }}
           CALENDAR_TEAM_NAME: ${{ secrets.CALENDAR_TEAM_NAME }}
           TIMEZONE: ${{ vars.TIMEZONE }}
         run: |
