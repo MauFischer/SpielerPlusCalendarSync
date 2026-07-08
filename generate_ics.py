@@ -59,6 +59,10 @@ def get_selected_team_name() -> str | None:
     return optional_env("SPIELERPLUS_TEAM_NAME")
 
 
+def get_calendar_team_name() -> str | None:
+    return optional_env("CALENDAR_TEAM_NAME")
+
+
 def local_tz() -> ZoneInfo:
     return ZoneInfo(os.environ.get("TIMEZONE", "Europe/Berlin"))
 
@@ -374,6 +378,7 @@ def main() -> None:
     calendar_name = os.environ.get("CALENDAR_NAME", "SpielerPlus Calendar").strip() or "SpielerPlus Calendar"
 
     selected_team_name = get_selected_team_name()
+    calendar_team_name = get_calendar_team_name()
 
     session = make_session()
     login(session, username, password)
@@ -419,7 +424,7 @@ def main() -> None:
 
             feed_items.append(
                 FeedItem(
-                    team_name=membership.team_name or "SpielerPlus",
+                    team_name=calendar_team_name or membership.team_name or "SpielerPlus",
                     event_id=ev["id"],
                     kind=ev["kind"],
                     title=summary,
