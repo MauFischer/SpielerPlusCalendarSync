@@ -31,6 +31,7 @@ jobs:
           SPIELERPLUS_USERNAME: ${{ secrets.SPIELERPLUS_USERNAME }}
           SPIELERPLUS_PASSWORD: ${{ secrets.SPIELERPLUS_PASSWORD }}
           CALENDAR_FILENAME: ${{ secrets.CALENDAR_FILENAME }}
+          SPIELERPLUS_TEAM_ID: ${{ secrets.SPIELERPLUS_TEAM_ID }}
           SPIELERPLUS_MEMBER_IDS: ${{ secrets.SPIELERPLUS_MEMBER_IDS }}
           CALENDAR_NAME: ${{ vars.CALENDAR_NAME }}
           TIMEZONE: ${{ vars.TIMEZONE }}
