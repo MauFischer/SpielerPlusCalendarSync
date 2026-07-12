@@ -62,6 +62,12 @@ def get_selected_team_name() -> str | None:
 def get_calendar_team_name() -> str | None:
     return optional_env("CALENDAR_TEAM_NAME")
 
+def get_include_from_date() -> date | None:
+    value = optional_env("INCLUDE_FROM_DATE")
+    if not value:
+        return None
+
+    return datetime.strptime(value, "%d.%m.%Y").date()
 
 def local_tz() -> ZoneInfo:
     return ZoneInfo(os.environ.get("TIMEZONE", "Europe/Berlin"))
@@ -409,6 +415,8 @@ def main() -> None:
     selected_team_name = get_selected_team_name()
     calendar_team_name = get_calendar_team_name()
 
+    include_from_date = get_include_from_date()
+
     session = make_session()
     login(session, username, password)
 
@@ -450,6 +458,16 @@ def main() -> None:
             )
 
             summary = build_summary(ev["kind"], ev["title"], is_home, is_away)
+
+            # Termine vor einem bestimmten Datum ignorieren
+            if (
+                include_from_date is not None
+                and start is not None
+            ):
+                event_date = start.date() if isinstance(start, datetime) else start
+            
+                if event_date < include_from_date:
+                    continue
 
             feed_items.append(
                 FeedItem(
