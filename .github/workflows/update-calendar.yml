@@ -34,6 +34,7 @@ jobs:
           CALENDAR_FILENAME: ${{ secrets.CALENDAR_FILENAME }}
           CALENDAR_NAME: ${{ secrets.CALENDAR_NAME }}
           CALENDAR_TEAM_NAME: ${{ secrets.CALENDAR_TEAM_NAME }}
+          INCLUDE_FROM_DATE: ${{ vars.INCLUDE_FROM_DATE }}
           TIMEZONE: ${{ vars.TIMEZONE }}
         run: |
           python generate_ics.py
