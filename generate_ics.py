@@ -294,21 +294,23 @@ def parse_detail_page(
         if "Ende" in time_values:
             ende = combine_date_time(event_date, time_values.get("Ende"))
 
-        # Start: zuerst Treffzeit, sonst Beginnzeit
+        # Start: Treffzeit, sonst Beginnzeit
         start = treff or beginn or fallback_start
 
-        # Ende: zuerst explizite Endezeit, sonst 2 Stunden nach Beginnzeit
+        # Ende: nur auf Basis von Beginnzeit, nicht Treffzeit
         if ende is not None:
             end = ende
         elif beginn is not None:
             end = beginn + timedelta(hours=2)
-        elif start is not None:
-            end = start + timedelta(hours=2)
+        else:
+            end = fallback_end
 
     if start and end and end <= start:
         end = end + timedelta(days=1)
+
     if start is None and event_date is not None:
         start = datetime(event_date.year, event_date.month, event_date.day)
+
     if end is None and start is not None:
         end = start + timedelta(hours=2)
 
