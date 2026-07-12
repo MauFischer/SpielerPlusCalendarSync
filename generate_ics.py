@@ -88,10 +88,16 @@ def combine_date_time(d: date | None, hhmm: str | None) -> datetime | None:
     if d is None:
         return None
     if not hhmm:
-        return datetime(d.year, d.month, d.day)
-    m = re.match(r"(\d{1,2}):(\d{2})", hhmm.strip())
+        return None
+
+    value = hhmm.strip()
+    if value in {"--:--", "-", "—", ""}:
+        return None
+
+    m = re.match(r"(\d{1,2}):(\d{2})", value)
     if not m:
-        return datetime(d.year, d.month, d.day)
+        return None
+
     return datetime(d.year, d.month, d.day, int(m.group(1)), int(m.group(2)))
 
 
@@ -281,38 +287,42 @@ def parse_detail_page(
     end = fallback_end
 
     if event_date:
-        treff = None
-        beginn = None
-        ende = None
+        treff = combine_date_time(event_date, time_values.get("Treffen"))
+        beginn = combine_date_time(event_date, time_values.get("Beginn"))
+        ende = combine_date_time(event_date, time_values.get("Ende"))
 
-        if "Treffen" in time_values:
-            treff = combine_date_time(event_date, time_values.get("Treffen"))
+        # Start:
+        # 1. Treffzeit
+        # 2. Beginnzeit
+        # 3. Kalenderübersicht
+        if treff is not None:
+            start = treff
+        elif beginn is not None:
+            start = beginn
 
-        if "Beginn" in time_values:
-            beginn = combine_date_time(event_date, time_values.get("Beginn"))
-
-        if "Ende" in time_values:
-            ende = combine_date_time(event_date, time_values.get("Ende"))
-
-        # Start: Treffzeit, sonst Beginnzeit
-        start = treff or beginn or fallback_start
-
-        # Ende: nur auf Basis von Beginnzeit, nicht Treffzeit
+        # Ende:
+        # 1. Endezeit
+        # 2. Beginn + 2 Stunden
+        # 3. Kalenderübersicht
         if ende is not None:
             end = ende
         elif beginn is not None:
             end = beginn + timedelta(hours=2)
-        else:
-            end = fallback_end
 
-    if start and end and end <= start:
-        end = end + timedelta(days=1)
+    # Ende darf nicht vor Start liegen
+    if start is not None and end is not None and end <= start:
+        end += timedelta(days=1)
 
+    # Falls überhaupt keine Startzeit bekannt ist
     if start is None and event_date is not None:
         start = datetime(event_date.year, event_date.month, event_date.day)
 
-    if end is None and start is not None:
-        end = start + timedelta(hours=2)
+    # Falls immer noch keine Endzeit vorhanden ist
+    if end is None:
+        if fallback_end is not None:
+            end = fallback_end
+        elif start is not None:
+            end = start + timedelta(hours=2)
 
     location_el = soup.select_one(".info-area-content small") or soup.select_one(".info-area-content")
     location = ""
