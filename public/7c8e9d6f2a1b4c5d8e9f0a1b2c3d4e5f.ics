@@ -6,7 +6,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260623T200000
 DTEND;TZID=Europe/Berlin:20260623T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259529@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  529
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260625T200000
 DTEND;TZID=Europe/Berlin:20260625T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259668@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  668
@@ -26,7 +26,7 @@ BEGIN:VEVENT
 SUMMARY:Waldlauf & Grillen | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260628T110000
 DTEND;TZID=Europe/Berlin:20260628T130000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-2449731@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/event/view?id=2449731
 URL:https://www.spielerplus.de/event/view?id=2449731
@@ -35,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260630T200000
 DTEND;TZID=Europe/Berlin:20260630T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259530@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  530
@@ -45,7 +45,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260702T200000
 DTEND;TZID=Europe/Berlin:20260702T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259669@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  669
@@ -55,7 +55,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel Volmetal 3 | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260705T170000
 DTEND;TZID=Europe/Berlin:20260705T200000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13430224@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13430224
 URL:https://www.spielerplus.de/game/view?id=13430224
@@ -64,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260707T200000
 DTEND;TZID=Europe/Berlin:20260707T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259531@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  531
@@ -74,7 +74,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260709T200000
 DTEND;TZID=Europe/Berlin:20260709T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259670@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  670
@@ -84,7 +84,7 @@ BEGIN:VEVENT
 SUMMARY:Kiosktour | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260710T180000
 DTEND;TZID=Europe/Berlin:20260710T235900
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-2445905@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/event/view?id=2445905
 URL:https://www.spielerplus.de/event/view?id=2445905
@@ -93,7 +93,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel ASC 2 | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260712T140000
 DTEND;TZID=Europe/Berlin:20260712T170000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13430228@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13430228
 URL:https://www.spielerplus.de/game/view?id=13430228
@@ -102,7 +102,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260714T200000
 DTEND;TZID=Europe/Berlin:20260714T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259532@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  532
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260716T200000
 DTEND;TZID=Europe/Berlin:20260716T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259671@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  671
@@ -122,7 +122,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260721T200000
 DTEND;TZID=Europe/Berlin:20260721T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259533@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  533
@@ -132,7 +132,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260723T200000
 DTEND;TZID=Europe/Berlin:20260723T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259672@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  672
@@ -142,7 +142,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel Lüdenscheid | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260725T150000
 DTEND;TZID=Europe/Berlin:20260725T180000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13430230@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13430230
 URL:https://www.spielerplus.de/game/view?id=13430230
@@ -151,7 +151,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260728T200000
 DTEND;TZID=Europe/Berlin:20260728T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259534@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  534
@@ -161,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260730T200000
 DTEND;TZID=Europe/Berlin:20260730T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259673@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  673
@@ -171,7 +171,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260804T200000
 DTEND;TZID=Europe/Berlin:20260804T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259535@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  535
@@ -181,7 +181,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260806T200000
 DTEND;TZID=Europe/Berlin:20260806T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259674@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  674
@@ -191,7 +191,7 @@ BEGIN:VEVENT
 SUMMARY:Auswärtsspiel SG RE OE | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260811T191500
 DTEND;TZID=Europe/Berlin:20260811T211500
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-14014137@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=14014137
 URL:https://www.spielerplus.de/game/view?id=14014137
@@ -200,7 +200,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel ASC 2 | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260816T083000
 DTEND;TZID=Europe/Berlin:20260816T113000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13966707@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13966707
 URL:https://www.spielerplus.de/game/view?id=13966707
@@ -209,7 +209,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel Mengede | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260816T114000
 DTEND;TZID=Europe/Berlin:20260816T134000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13966714@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13966714
 URL:https://www.spielerplus.de/game/view?id=13966714
@@ -218,7 +218,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel Ewaldi | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260816T131000
 DTEND;TZID=Europe/Berlin:20260816T151000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13966741@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13966741
 URL:https://www.spielerplus.de/game/view?id=13966741
@@ -227,7 +227,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260818T200000
 DTEND;TZID=Europe/Berlin:20260818T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259537@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  537
@@ -237,7 +237,7 @@ BEGIN:VEVENT
 SUMMARY:Sport und Essen | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260819T183000
 DTEND;TZID=Europe/Berlin:20260819T203000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-2484711@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/event/view?id=2484711
 URL:https://www.spielerplus.de/event/view?id=2484711
@@ -246,7 +246,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel Rauxel Schwerin | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260820T191500
 DTEND;TZID=Europe/Berlin:20260820T221500
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-14156198@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=14156198
 URL:https://www.spielerplus.de/game/view?id=14156198
@@ -255,7 +255,7 @@ BEGIN:VEVENT
 SUMMARY:Auswärtsspiel Letmather TV | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260823T153000
 DTEND;TZID=Europe/Berlin:20260823T183000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-13430234@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=13430234
 URL:https://www.spielerplus.de/game/view?id=13430234
@@ -264,7 +264,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260825T200000
 DTEND;TZID=Europe/Berlin:20260825T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259538@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  538
@@ -274,7 +274,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260827T200000
 DTEND;TZID=Europe/Berlin:20260827T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259677@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  677
@@ -284,7 +284,7 @@ BEGIN:VEVENT
 SUMMARY:Auswärtsspiel Spiel bei Volmetal | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260829T133000
 DTEND;TZID=Europe/Berlin:20260829T153000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-14210871@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=14210871
 URL:https://www.spielerplus.de/game/view?id=14210871
@@ -293,7 +293,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel Halle putzen | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260830T150000
 DTEND;TZID=Europe/Berlin:20260830T170000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-14210906@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=14210906
 URL:https://www.spielerplus.de/game/view?id=14210906
@@ -302,7 +302,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260901T200000
 DTEND;TZID=Europe/Berlin:20260901T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259539@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  539
@@ -312,7 +312,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260903T200000
 DTEND;TZID=Europe/Berlin:20260903T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259678@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  678
@@ -322,7 +322,7 @@ BEGIN:VEVENT
 SUMMARY:Auswärtsspiel Letmather TV | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260905T150000
 DTEND;TZID=Europe/Berlin:20260905T180000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-14291125@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=14291125
 URL:https://www.spielerplus.de/game/view?id=14291125
@@ -331,7 +331,7 @@ BEGIN:VEVENT
 SUMMARY:Heimspiel TV Werne | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260906T160000
 DTEND;TZID=Europe/Berlin:20260906T190000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-14291119@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/game/view?id=14291119
 URL:https://www.spielerplus.de/game/view?id=14291119
@@ -340,7 +340,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260908T200000
 DTEND;TZID=Europe/Berlin:20260908T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259541@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  541
@@ -350,7 +350,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260910T200000
 DTEND;TZID=Europe/Berlin:20260910T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259679@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  679
@@ -360,7 +360,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260915T200000
 DTEND;TZID=Europe/Berlin:20260915T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259542@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  542
@@ -370,7 +370,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260917T200000
 DTEND;TZID=Europe/Berlin:20260917T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259680@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  680
@@ -380,7 +380,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260922T200000
 DTEND;TZID=Europe/Berlin:20260922T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259543@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  543
@@ -390,7 +390,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260924T200000
 DTEND;TZID=Europe/Berlin:20260924T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259682@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  682
@@ -400,7 +400,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20260929T200000
 DTEND;TZID=Europe/Berlin:20260929T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259544@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  544
@@ -410,7 +410,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261001T200000
 DTEND;TZID=Europe/Berlin:20261001T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259683@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  683
@@ -420,7 +420,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261006T200000
 DTEND;TZID=Europe/Berlin:20261006T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259545@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  545
@@ -430,7 +430,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261008T200000
 DTEND;TZID=Europe/Berlin:20261008T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259684@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  684
@@ -440,7 +440,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261013T200000
 DTEND;TZID=Europe/Berlin:20261013T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259546@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  546
@@ -450,7 +450,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261015T200000
 DTEND;TZID=Europe/Berlin:20261015T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259685@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  685
@@ -460,7 +460,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261020T200000
 DTEND;TZID=Europe/Berlin:20261020T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259547@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  547
@@ -470,7 +470,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261022T200000
 DTEND;TZID=Europe/Berlin:20261022T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259686@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  686
@@ -480,7 +480,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261027T200000
 DTEND;TZID=Europe/Berlin:20261027T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259548@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  548
@@ -490,7 +490,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261029T200000
 DTEND;TZID=Europe/Berlin:20261029T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259687@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  687
@@ -500,7 +500,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261103T200000
 DTEND;TZID=Europe/Berlin:20261103T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259549@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  549
@@ -510,7 +510,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261105T200000
 DTEND;TZID=Europe/Berlin:20261105T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259688@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  688
@@ -520,7 +520,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261110T200000
 DTEND;TZID=Europe/Berlin:20261110T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259550@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  550
@@ -530,7 +530,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261117T200000
 DTEND;TZID=Europe/Berlin:20261117T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259551@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  551
@@ -540,7 +540,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261124T200000
 DTEND;TZID=Europe/Berlin:20261124T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259552@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  552
@@ -550,7 +550,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261201T200000
 DTEND;TZID=Europe/Berlin:20261201T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259553@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  553
@@ -560,7 +560,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261208T200000
 DTEND;TZID=Europe/Berlin:20261208T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259554@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  554
@@ -570,7 +570,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261215T200000
 DTEND;TZID=Europe/Berlin:20261215T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259555@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  555
@@ -580,7 +580,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261222T200000
 DTEND;TZID=Europe/Berlin:20261222T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259556@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  556
@@ -590,7 +590,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20261229T200000
 DTEND;TZID=Europe/Berlin:20261229T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259557@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  557
@@ -600,7 +600,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270105T200000
 DTEND;TZID=Europe/Berlin:20270105T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259558@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  558
@@ -610,7 +610,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270112T200000
 DTEND;TZID=Europe/Berlin:20270112T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259559@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  559
@@ -620,7 +620,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270119T200000
 DTEND;TZID=Europe/Berlin:20270119T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259560@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  560
@@ -630,7 +630,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270126T200000
 DTEND;TZID=Europe/Berlin:20270126T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259561@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  561
@@ -640,7 +640,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270202T200000
 DTEND;TZID=Europe/Berlin:20270202T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259562@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  562
@@ -650,7 +650,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270209T200000
 DTEND;TZID=Europe/Berlin:20270209T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259563@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  563
@@ -660,7 +660,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270216T200000
 DTEND;TZID=Europe/Berlin:20270216T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259564@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  564
@@ -670,7 +670,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270223T200000
 DTEND;TZID=Europe/Berlin:20270223T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259565@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  565
@@ -680,7 +680,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270302T200000
 DTEND;TZID=Europe/Berlin:20270302T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259566@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  566
@@ -690,7 +690,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270309T200000
 DTEND;TZID=Europe/Berlin:20270309T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259567@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  567
@@ -700,7 +700,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270316T200000
 DTEND;TZID=Europe/Berlin:20270316T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259568@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  568
@@ -710,7 +710,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270323T200000
 DTEND;TZID=Europe/Berlin:20270323T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259569@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  569
@@ -720,7 +720,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270330T200000
 DTEND;TZID=Europe/Berlin:20270330T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259570@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  570
@@ -730,7 +730,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270406T200000
 DTEND;TZID=Europe/Berlin:20270406T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259571@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  571
@@ -740,7 +740,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270413T200000
 DTEND;TZID=Europe/Berlin:20270413T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259572@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  572
@@ -750,7 +750,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270420T200000
 DTEND;TZID=Europe/Berlin:20270420T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259573@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  573
@@ -760,7 +760,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270427T200000
 DTEND;TZID=Europe/Berlin:20270427T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259574@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  574
@@ -770,7 +770,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270504T200000
 DTEND;TZID=Europe/Berlin:20270504T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259575@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  575
@@ -780,7 +780,7 @@ BEGIN:VEVENT
 SUMMARY:Training | TSG Schüren 1. Herren
 DTSTART;TZID=Europe/Berlin:20270511T200000
 DTEND;TZID=Europe/Berlin:20270511T220000
-DTSTAMP:20260903T085151Z
+DTSTAMP:20260904T084822Z
 UID:spielerplus-TSG Schüren 1. Herren-76259576@local
 DESCRIPTION:SpielerPlus: https://www.spielerplus.de/training/view?id=76259
  576
